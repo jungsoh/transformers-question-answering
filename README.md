@@ -23,4 +23,7 @@ We use the [QA bAbI dataset](https://research.fb.com/downloads/babi/), which is 
  'story.type': [0, 0, 1]}
  ```
  
- 
+## Transformer model
+We tokenize the input using the [🤗 DistilBERT fast tokenizer](https://huggingface.co/transformers/model_doc/distilbert.html) to match the pre-trained DistilBERT transformer model we are using.
+
+For training withe the QA bAbI dataset, we use two different implementations: one in TensorFlow and one in PyTorch.
